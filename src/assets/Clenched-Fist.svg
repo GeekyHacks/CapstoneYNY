@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1365.396 1688.768" enable-background="new 0 0 1365.396 1688.768" xml:space="preserve">
+<g>
+	<polyline fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" points="
+		140.314,275.543 68.042,379.491 68.042,877.857 339.223,1160.269 266.939,1644.384 1098.456,1644.384 1026.165,1160.269 
+		1297.354,877.857 1297.354,419.357 1247.512,332.979 975.068,239.945 	"/>
+	<path fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" d="M884.902,112.039
+		l37.142-16.803c87.128,29.296,154.005,65.01,211.057,119.46v419.446c0,33.085-26.828,59.905-59.911,59.905H944.816
+		c-33.09,0-59.914-26.821-59.914-59.905l0,0V112.039z"/>
+	<path fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" d="M687.085,44.384
+		l-50.381,50.382v536.315l0,0c0,33.087,26.828,59.907,59.909,59.907h128.378c33.093,0,59.91-26.821,59.91-59.907V112.039v0.352
+		l-50.382-50.378C787.603,51.855,738.172,45.785,687.085,44.384z"/>
+	<path fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" d="M589.396,47.457
+		c-52.352,4.766-102.538,14.457-149.608,41.203l-51.278,37.854v504.567l0,0c0,33.087,26.821,59.907,59.909,59.907h128.378
+		c33.088,0,59.909-26.821,59.909-59.907V488.475V94.766L589.396,47.457z"/>
+	<path fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" d="M140.314,275.543
+		v355.537l0,0c0,33.087,26.821,59.907,59.909,59.907H328.6c33.086,0,59.909-26.821,59.909-59.907V488.475V126.514l-32.204-15.27
+		c-96.172,40.931-165.974,92.509-215.995,164.299H140.314z"/>
+	<polyline fill="#FF5000" stroke="#000000" stroke-width="28.9099" stroke-linecap="round" stroke-linejoin="round" points="
+		1297.354,877.857 1297.354,419.357 1247.512,332.979 957.642,239.945 884.902,258.223 884.902,370.557 917.778,407.419 
+		1027.986,496.918 983.799,761.572 	"/>
+</g>
+</svg>
