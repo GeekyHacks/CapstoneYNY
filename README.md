@@ -28,12 +28,12 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 WebPack Template <a name="about-project"></a>
+# 📖 Yemen National Youth Council <a name="about-project"></a>
 
-**WebPack Template**
-it can be used for projects that use webpack bundling.
+**Yemen National Youth Council**
+In this project I have remade my Module 1 capstone project with Microverse. It was configured using Webpack and most of html content is injected using JS. The main purpose of this Repo is to practice styling project more smoothly using sass and well structured and semantic html layout
 
-## 🛠 webpack installation <a name="webpack-installation"> [webpack-installation](WebPackInstallation.md)</a>
+
 
 ## 🛠 Built With <a name="built-with">HTML, CSS and JavaScript</a>
 
