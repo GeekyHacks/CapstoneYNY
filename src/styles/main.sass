@@ -7,7 +7,8 @@ body
     font-size: 14px
     // overflow: hidden
     margin: 0
-    background: $primary-color
+    text-shadow: 0.4px .2 black
+    background-color: $primary-color
 
 a,img
     color: #fbfaf8
@@ -65,10 +66,7 @@ nav
 
 .page1
     @include columnFlex
-    // @include transparentBg
     margin: 3rem 0.15rem 2rem 0.15rem
-
-    background: transparent
     padding: .5rem
 .hero
     @include columnFlex
@@ -85,13 +83,65 @@ nav
         border: 3px solid $secondary-color
         padding: .3rem
         font-size: .9rem
-        color: $secondary-color
-        text-shadow: 0.4px 0 black
-        // background: linear-gradient( to top , rgba(0, 0, 0, .3),rgba(0, 0, 0, 0.6))
+        // color: $secondary-color
+        text-shadow: 0.4px .2 black
+        // background-color: rgba(150, 150, 150, 0.2)
 
     h2
         margin-top: 1rem
         font-size: 1.1rem
+
+.page2
+    @include columnFlex
+    background-image: url('#{$assetsPath}/program_content.svg')
+    background-size: cover
+    background-blend-mode: color-burn
+    background-repeat: no-repeat
+
+.scdPage
+    @include columnFlex
+    justify-content: center
+    align-items: center
+    margin: .5rem 1.5rem
+    gap: 2rem
+    color: $secondary-color
+
+.fstPart
+    @include columnFlex
+    justify-content: center
+    align-items: center
+    h2
+        margin-bottom: .4rem
+
+.programs
+    @include columnFlex
+    justify-content: center
+    align-items: center
+    gap: .5rem
+    li
+        box-shadow: $box-shadow
+        background-color: rgba(150, 150, 150, 0.2)
+        stroke-opacity: 1
+        padding: .2rem
+        @include rowFlex
+        justify-content: center
+        align-items: center
+        gap: .25rem
+        max-width: 550px
+        img
+            flex: .4
+        h3
+            flex: .4
+        p
+            flex: 1
+            text-align: left
+
+.endPart
+    box-shadow: $box-shadow
+    background-color: rgba(87, 85, 85, 0.7)
+    color: $secondary-color
+    white-space: nowrap
+    padding: 1rem
 
 // font adjustment 
 
@@ -194,7 +244,16 @@ nav
         .adress
             font-size: 1.5rem
 
-    
+    // page2
+    .programs
+        @include rowFlex
+        li
+            @include columnFlex
+            height: 12rem
+            gap: .5rem
+            p
+                text-align: center
+
 // .btn
 //     background-color: $primary-color
 //     color: $secondary-color

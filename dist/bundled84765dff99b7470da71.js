@@ -29,6 +29,65 @@ var headerSection = function headerSection() {
 
 /***/ }),
 
+/***/ "./src/modules/mainSection.js":
+/*!************************************!*\
+  !*** ./src/modules/mainSection.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fstPage: () => (/* binding */ fstPage),
+/* harmony export */   scdPage: () => (/* binding */ scdPage)
+/* harmony export */ });
+/* harmony import */ var _assets_program_icon_01_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/program_icon_01.svg */ "./src/assets/program_icon_01.svg");
+/* harmony import */ var _assets_program_icon_02_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/program_icon_02.svg */ "./src/assets/program_icon_02.svg");
+/* harmony import */ var _assets_program_icon_03_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/program_icon_03.svg */ "./src/assets/program_icon_03.svg");
+/* harmony import */ var _assets_program_icon_04_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/program_icon_04.svg */ "./src/assets/program_icon_04.svg");
+/* harmony import */ var _assets_program_icon_05_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/program_icon_05.svg */ "./src/assets/program_icon_05.svg");
+/* harmony import */ var _assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/title_underline.svg */ "./src/assets/title_underline.svg");
+// programs icons
+
+
+
+
+
+// figures
+// import Ghafiqi from '../Abdul_Rahman_Al_Ghafiqi.png';
+// import Sheba from '../Queen_of_Sheba.jpg';
+// import SalimRubai from '../SalimRubai.jpg';
+// import Eryani from '../Abdrahman_al-Eryani.jpg';
+// import Imam from '../Imam_qasam.png';
+// import Hamdi from '../IbrahimAl_Hamdi.jpg';
+// partners images
+// import ssss from '../1328850086.svg';
+// import BRICS from '../BRICS.svg';
+// import Fist from '../Clenched-Fist.svg';
+// import Marx from '../Nightingale_Marx_Lenin.svg';
+// import YemenFlag from '../Yemen-Map-Flag-With-Stroke-And-Emblem.svg';
+
+// other icons
+// import arrowDown from '../arrow_down.svg';
+
+// import X from '../x.svg';
+// import logo from '../logo.svg';
+
+var main = document.querySelector('main');
+var page1 = document.createElement('section');
+var page2 = document.createElement('section');
+page1.classList.add('page1');
+var fstPage = function fstPage() {
+  page1.innerHTML = "\n    <div class=\"hero\">\n    <h1>\n      <span>\"Hello! Yemeni People\"</span> PATRIOTIC COMMONS <br />\n      NATIONAL SUMMIT 2024\n    </h1>\n    <p class=\"fstPageP\">\n      Those national figures are the lighthouse we must seek during our dark times, therefore, it's a must for every Yemeni\n      to remember them and teach the next generation about them.\n    </p>\n    <h2>2024.10.14(THU) ~ 15(FRI)</h2>\n    <p class=\"adress\">@Alsabeen Street, the revolution square.</p>\n    </div>\n    ";
+  main.appendChild(page1);
+};
+page2.classList.add('page2');
+var scdPage = function scdPage() {
+  page2.innerHTML = "\n<div class=\"scdPage\">\n          <div class=\"fstPart\">\n            <h2>Main Program</h2>\n            <img src=\"".concat(_assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_5__, "\" alt=\"\" />\n          </div>\n          <ul class=\"programs\">\n            <li>\n              <img src=\"").concat(_assets_program_icon_01_svg__WEBPACK_IMPORTED_MODULE_0__, "\" alt=\"\" />\n              <h3>Lecture</h3>\n              <p>Listen about Yemeni figures and get inspired to the change for better future.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_02_svg__WEBPACK_IMPORTED_MODULE_1__, "\" alt=\"\" />\n              <h3>Exhibitions</h3>\n              <p>Appreciate various creations applying YNY ID and be part of patriotic community</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_03_svg__WEBPACK_IMPORTED_MODULE_2__, "\" alt=\"\" />\n              <h3>Forum</h3>\n              <p>Have the time to share your thoughts and opinions with experts for each topic.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_04_svg__WEBPACK_IMPORTED_MODULE_3__, "\" alt=\"\" />\n              <h3>Workshop</h3>\n              <p>Try creating your own work using open source license rather than just watching at it.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_05_svg__WEBPACK_IMPORTED_MODULE_4__, "\" alt=\"\" />\n              <h3>Ignite</h3>\n              <p>get opportunities to network with CC affiliates around the world, also after the summit.</p>\n            </li>\n          </ul>\n\n          <h3 class=\"endPart\">Join YNY National Summit 2024</h3>\n        </div>\n");
+  main.appendChild(page2);
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.sass":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.sass ***!
@@ -43,11 +102,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/Flag-Yemen.webp */ "./src/assets/Flag-Yemen.webp"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/program_content.svg */ "./src/assets/program_content.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
   box-sizing: border-box;
@@ -62,9 +128,9 @@ body {
   background-color: transparent;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  overflow: hidden;
   margin: 0;
-  background: #dce3e6;
+  text-shadow: 0.4px 0.2 black;
+  background-color: rgba(150, 150, 150, 0.2);
 }
 
 a, img {
@@ -113,6 +179,7 @@ nav {
   gap: 0.2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   background: #a7b7bd;
+  height: 3.2rem;
 }
 
 #menuBtn {
@@ -121,13 +188,157 @@ nav {
 
 #logo {
   flex: 2;
-  height: 4rem;
+  height: 2.8rem;
 }
 
 #labels {
   display: none;
 }
 
+.page1 {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0.15rem 2rem 0.15rem;
+  padding: 0.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.hero h1 {
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.hero .fstPageP {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid #a7b7bd;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  text-shadow: 0.4px 0.2 black;
+}
+.hero h2 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+}
+
+.scdPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 1.5rem;
+  gap: 2rem;
+  color: #a7b7bd;
+}
+
+.fstPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fstPart h2 {
+  margin-bottom: 0.4rem;
+}
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.programs li {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(150, 150, 150, 0.2);
+  stroke-opacity: 1;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  max-width: 550px;
+}
+.programs li img {
+  flex: 0.4;
+}
+.programs li h3 {
+  flex: 0.4;
+}
+.programs li p {
+  flex: 1;
+  text-align: left;
+}
+
+.endPart {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(87, 85, 85, 0.7);
+  color: #a7b7bd;
+  white-space: nowrap;
+  padding: 1rem;
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.922rem;
+  }
+  .hero .fstPageP {
+    font-size: 1.1rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .hero .adress {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 650px) {
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+  .hero .fstPageP {
+    font-size: 1.4rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero .adress {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 650px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3.1rem;
+  }
+  .hero .fstPageP {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .hero .adress {
+    font-size: 1.3rem;
+  }
+}
 @media (min-width: 768px) {
   nav {
     gap: 0;
@@ -181,23 +392,37 @@ nav {
     white-space: nowrap;
     padding: 0.3rem;
   }
-}
-.btn {
-  background-color: #dce3e6;
-  color: #a7b7bd;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.btn:active {
-  transform: scale(0.98);
-}
-.btn:focus {
-  outline: 0;
-}`, "",{"version":3,"sources":["webpack://./src/styles/global.sass","webpack://./src/styles/main.sass"],"names":[],"mappings":"AAQA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;EACA,qBAAA;ACNJ;;AALA;EACI,6BAAA;EACA,iCAAA;EACA,eAAA;EACA,gBAAA;EACA,SAAA;EACA,mBDRY;ACgBhB;;AANA;EACI,cAAA;EACA,mBAAA;AASJ;AAPI;EACI,YAAA;EACA,eAAA;EACA,qBAAA;EACA,uBAAA;AASR;AAPI;EACI,qBAAA;EACA,cDrBU;AC8BlB;AAPI;EACI,UAAA;EACA,cDzBU;ACkClB;;AANA;EDXI,aAAA;EACA,sBAAA;ACqBJ;;AARA;EACI,aAAA;AAWJ;;AATA;EDdI,aAAA;EACA,mBAAA;ECeA,8BAAA;EACA,mBAAA;EACA,eAAA;EACA,SAAA;AAaJ;;AAXA;EDrBI,aAAA;EACA,mBAAA;ECsBA,8BAAA;EACA,mBAAA;EACA,eAAA;EACA,WAAA;EACA,wED9CS;EC+CT,mBDhDc;AC+DlB;;AAbA;EACI,SAAA;AAgBJ;;AAdA;EACI,OAAA;EACA,YAAA;AAiBJ;;AAfA;EACI,aAAA;AAkBJ;;AAfA;EAEI;IACI,MAAA;EAiBN;EAhBE;ID7CA,aAAA;IACA,mBAAA;IC8CI,oBAAA;IACA,mBAAA;EAmBN;EAhBE;IACI,gCDtEI;ECwFV;EAhBE;IDtDA,aAAA;IACA,mBAAA;ICuDI,6BAAA;IACA,mBAAA;IACA,gCD3EI;EC8FV;EAjBE;ID5DA,aAAA;IACA,mBAAA;IC6DI,8BAAA;IACA,mBAAA;IACA,wEDnFK;ICoFL,mBAAA;IACA,SAAA;EAoBN;EAlBM;IACI,cAAA;EAoBV;EAlBE;IACI,aAAA;EAoBN;EAlBE;IACI,OAAA;IACA,YAAA;EAoBN;EAlBE;IACI,OAAA;ID/EJ,aAAA;IACA,mBAAA;ICgFI,6BAAA;IACA,mBAAA;IAEA,iBAAA;EAoBN;EAnBM;IACI,cD1GM;IC2GN,yBAAA;IACA,mBAAA;IACA,eAAA;EAqBV;AACF;AApBA;EACI,yBDjHY;ECkHZ,cDjHc;ECkHd,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAsBJ;AApBI;EACI,sBAAA;AAsBR;AApBI;EACI,UAAA;AAsBR","sourcesContent":["$InterFont: \"Inter\", sans-serif\r\n$primary-color: #dce3e6\r\n$secondary-color: #a7b7bd\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 20% - 100px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 20% - 100px )\r\n$Qlpadding: calc( 25% - 120px )\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 2px\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1rem\r\n    letter-spacing: 0.001em\r\n    word-spacing: normal\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    box-shadow: $box-shadow\r\n    padding: 10px\r\n    cursor: pointer\r\n    text-align: center\r\n\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n","@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 14px\r\n    overflow: hidden\r\n    margin: 0\r\n    background: $primary-color\r\n\r\na,img\r\n    color: #fbfaf8\r\n    transition: all 0.5\r\n\r\n    &:hover\r\n        opacity: .7\r\n        cursor: pointer\r\n        transform: scale(1.1)\r\n        color: black !important\r\n\r\n    &:active\r\n        transform: scale(1.3)\r\n        color: $secondary-color\r\n\r\n    &:focus\r\n        outline: 0\r\n        color: $secondary-color\r\n\r\n// nav section mobile section\r\nnav\r\n    @include columnFlex\r\n\r\n.fstHead\r\n    display: none\r\n    \r\n#fstHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: 1rem\r\n\r\n#sndHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: .2rem\r\n    box-shadow: $box-shadow\r\n    background: $secondary-color\r\n\r\n#menuBtn\r\n    flex: .2\r\n\r\n#logo\r\n    flex: 2\r\n    height: 4rem\r\n\r\n#labels\r\n    display: none\r\n\r\n// nav section desktop section\r\n@media ( min-width: 768px  )\r\n\r\n    nav\r\n        gap: 0\r\n    .fstHead\r\n        @include rowFlex\r\n        justify-content: end\r\n        background: #434c5e\r\n\r\n    // padding elements \r\n    #fstHead, #sndHead\r\n        padding-right: $qrpadding\r\n\r\n    #fstHead\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        padding-right: $Qrpadding\r\n\r\n    #sndHead\r\n        @include rowFlex\r\n        justify-content: space-between\r\n        align-items: center\r\n        box-shadow: $box-shadow\r\n        background: #fbfaf8\r\n        gap: 2rem\r\n\r\n        a\r\n            color: #495057\r\n\r\n    #menuBtn\r\n        display: none\r\n\r\n    #logo\r\n        flex: 2\r\n        height: 3rem\r\n\r\n    #labels\r\n        flex: 6\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        // gap: 1rem\r\n        font-size: .8rem\r\n        #borderLabel\r\n            color: $secondary-color\r\n            border: 3px solid $secondary-color\r\n            white-space: nowrap\r\n            padding: 0.3rem\r\n\r\n.btn\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    border-radius: 10px\r\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n    padding: 14px 40px\r\n    font-size: 16px\r\n    cursor: pointer\r\n\r\n    &:active\r\n        transform: scale(0.98)\r\n\r\n    &:focus\r\n        outline: 0\r\n"],"sourceRoot":""}]);
+  .page1 {
+    margin-top: 4rem;
+    padding-right: calc(25% - 120px);
+    padding-left: calc(25% - 120px);
+  }
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+  .hero .fstPageP {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+  .hero .adress {
+    font-size: 1.5rem;
+  }
+  .programs {
+    display: flex;
+    flex-direction: row;
+  }
+  .programs li {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    gap: 0.5rem;
+  }
+  .programs li p {
+    text-align: center;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/styles/global.sass","webpack://./src/styles/main.sass"],"names":[],"mappings":"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","sourcesContent":["$InterFont: \"Inter\", sans-serif\r\n$primary-color: rgba(150, 150, 150, 0.2)\r\n$secondary-color: #a7b7bd\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 20% - 100px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 20% - 100px )\r\n$Qlpadding: calc( 25% - 120px )\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 2px\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1rem\r\n    letter-spacing: 0.001em\r\n    word-spacing: normal\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    box-shadow: $box-shadow\r\n    padding: 10px\r\n    cursor: pointer\r\n    text-align: center\r\n\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n","@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n$assetsPath: '../assets'\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 14px\r\n    // overflow: hidden\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n\r\na,img\r\n    color: #fbfaf8\r\n    transition: all 0.5\r\n\r\n    &:hover\r\n        opacity: .7\r\n        cursor: pointer\r\n        transform: scale(1.1)\r\n        color: black !important\r\n\r\n    &:active\r\n        transform: scale(1.3)\r\n        color: $secondary-color\r\n\r\n    &:focus\r\n        outline: 0\r\n        color: $secondary-color\r\n\r\n// nav section mobile section\r\nnav\r\n    @include columnFlex\r\n\r\n.fstHead\r\n    display: none\r\n\r\n#fstHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: 1rem\r\n\r\n#sndHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: .2rem\r\n    box-shadow: $box-shadow\r\n    background: $secondary-color\r\n    height: 3.2rem\r\n\r\n#menuBtn\r\n    flex: .2\r\n\r\n#logo\r\n    flex: 2\r\n    height: 2.8rem\r\n\r\n#labels\r\n    display: none\r\n\r\n// Main section \r\n\r\n.page1\r\n    @include columnFlex\r\n    margin: 3rem 0.15rem 2rem 0.15rem\r\n    padding: .5rem\r\n.hero\r\n    @include columnFlex\r\n    justify-content: left\r\n    align-items: flex-start\r\n\r\n    h1\r\n        @include transparentText\r\n        font-weight: 800\r\n        font-size: 1.5rem\r\n        margin-bottom: 1.5rem\r\n    .fstPageP\r\n        box-shadow: $box-shadow\r\n        border: 3px solid $secondary-color\r\n        padding: .3rem\r\n        font-size: .9rem\r\n        // color: $secondary-color\r\n        text-shadow: 0.4px .2 black\r\n        // background-color: rgba(150, 150, 150, 0.2)\r\n\r\n    h2\r\n        margin-top: 1rem\r\n        font-size: 1.1rem\r\n\r\n.page2\r\n    @include columnFlex\r\n    background-image: url('#{$assetsPath}/program_content.svg')\r\n    background-size: cover\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n\r\n.scdPage\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    margin: .5rem 1.5rem\r\n    gap: 2rem\r\n    color: $secondary-color\r\n\r\n.fstPart\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    h2\r\n        margin-bottom: .4rem\r\n\r\n.programs\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    gap: .5rem\r\n    li\r\n        box-shadow: $box-shadow\r\n        background-color: rgba(150, 150, 150, 0.2)\r\n        stroke-opacity: 1\r\n        padding: .2rem\r\n        @include rowFlex\r\n        justify-content: center\r\n        align-items: center\r\n        gap: .25rem\r\n        max-width: 550px\r\n        img\r\n            flex: .4\r\n        h3\r\n            flex: .4\r\n        p\r\n            flex: 1\r\n            text-align: left\r\n\r\n.endPart\r\n    box-shadow: $box-shadow\r\n    background-color: rgba(87, 85, 85, 0.7)\r\n    color: $secondary-color\r\n    white-space: nowrap\r\n    padding: 1rem\r\n\r\n// font adjustment \r\n\r\n@media (min-width: 375px) and ( max-width: 500px  )\r\n    .hero\r\n        h1\r\n            font-size: 1.922rem\r\n        .fstPageP\r\n            font-size: 1.1rem\r\n        h2\r\n            font-size: 1.2rem\r\n        .adress\r\n            font-size: .9rem\r\n\r\n@media (min-width: 500px) and ( max-width: 650px  )\r\n    .hero\r\n        h1\r\n            font-size: 2.55rem\r\n        .fstPageP\r\n            font-size: 1.4rem\r\n        h2\r\n            font-size: 1.5rem\r\n        .adress\r\n            font-size: 1.2rem\r\n\r\n@media (min-width: 650px) and ( max-width: 768px  )\r\n    .hero\r\n        h1\r\n            font-size: 3.1rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 1.6rem\r\n        .adress\r\n            font-size: 1.3rem\r\n\r\n// desktop \r\n\r\n@media ( min-width: 768px  )\r\n    nav\r\n        gap: 0\r\n\r\n    .fstHead\r\n        @include rowFlex\r\n        justify-content: end\r\n        background: #434c5e\r\n\r\n    #fstHead, #sndHead\r\n        padding-right: $qrpadding\r\n\r\n    #fstHead\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        padding-right: $Qrpadding\r\n\r\n    #sndHead\r\n        @include rowFlex\r\n        justify-content: space-between\r\n        align-items: center\r\n        box-shadow: $box-shadow\r\n        background: #fbfaf8\r\n        gap: 2rem\r\n\r\n        a\r\n            color: #495057\r\n\r\n    #menuBtn\r\n        display: none\r\n\r\n    #logo\r\n        flex: 2\r\n        height: 3rem\r\n\r\n    #labels\r\n        flex: 6\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        font-size: .8rem\r\n\r\n        #borderLabel\r\n            color: $secondary-color\r\n            border: 3px solid $secondary-color\r\n            white-space: nowrap\r\n            padding: 0.3rem\r\n    // main section\r\n\r\n    .page1\r\n        margin-top: 4rem\r\n        padding-right: $Qrpadding\r\n        padding-left: $Qlpadding\r\n    .hero\r\n        h1\r\n            font-size: 3.3rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 2.2rem\r\n        .adress\r\n            font-size: 1.5rem\r\n\r\n    // page2\r\n    .programs\r\n        @include rowFlex\r\n        li\r\n            @include columnFlex\r\n            height: 12rem\r\n            gap: .5rem\r\n            p\r\n                text-align: center\r\n\r\n// .btn\r\n//     background-color: $primary-color\r\n//     color: $secondary-color\r\n//     border: 0\r\n//     border-radius: 10px\r\n//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n//     padding: 14px 40px\r\n//     font-size: 16px\r\n//     cursor: pointer\r\n\r\n//     &:active\r\n//         transform: scale(0.98)\r\n\r\n//     &:focus\r\n//         outline: 0\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -294,6 +519,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -644,6 +904,16 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/assets/Flag-Yemen.webp":
+/*!************************************!*\
+  !*** ./src/assets/Flag-Yemen.webp ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "Flag-Yemen.webp";
+
+/***/ }),
+
 /***/ "./src/assets/facebook.svg":
 /*!*********************************!*\
   !*** ./src/assets/facebook.svg ***!
@@ -671,6 +941,76 @@ module.exports = __webpack_require__.p + "logo.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "mobile_menu.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_content.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_content.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_content.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_icon_01.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_icon_01.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_icon_01.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_icon_02.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_icon_02.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_icon_02.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_icon_03.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_icon_03.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_icon_03.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_icon_04.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_icon_04.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_icon_04.svg";
+
+/***/ }),
+
+/***/ "./src/assets/program_icon_05.svg":
+/*!****************************************!*\
+  !*** ./src/assets/program_icon_05.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "program_icon_05.svg";
+
+/***/ }),
+
+/***/ "./src/assets/title_underline.svg":
+/*!****************************************!*\
+  !*** ./src/assets/title_underline.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "title_underline.svg";
 
 /***/ }),
 
@@ -709,6 +1049,9 @@ module.exports = __webpack_require__.p + "twitter.svg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -786,6 +1129,32 @@ module.exports = __webpack_require__.p + "twitter.svg";
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"bundle": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -801,13 +1170,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.sass */ "./src/styles/main.sass");
 /* harmony import */ var _modules_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header.js */ "./src/modules/header.js");
+/* harmony import */ var _modules_mainSection_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/mainSection.js */ "./src/modules/mainSection.js");
 
 
-window.onload = (0,_modules_header_js__WEBPACK_IMPORTED_MODULE_1__.headerSection)();
 
-// headerSection();
+window.onload = function () {
+  (0,_modules_header_js__WEBPACK_IMPORTED_MODULE_1__.headerSection)();
+  (0,_modules_mainSection_js__WEBPACK_IMPORTED_MODULE_2__.fstPage)();
+  (0,_modules_mainSection_js__WEBPACK_IMPORTED_MODULE_2__.scdPage)();
+};
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle953df2f730164d254f31.js.map
+//# sourceMappingURL=bundled84765dff99b7470da71.js.map
