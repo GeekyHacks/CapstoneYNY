@@ -27,6 +27,7 @@ import underline from '../assets/title_underline.svg';
 const main = document.querySelector('main');
 const page1 = document.createElement('section');
 const page2 = document.createElement('section');
+const page3 = document.createElement('section');
 page1.classList.add('page1');
 
 export const fstPage = () => {
@@ -50,7 +51,7 @@ export const fstPage = () => {
 page2.classList.add('page2');
 export const scdPage = () => {
   page2.innerHTML = `
-<div class="scdPage">
+<div class="Page">
           <div class="fstPart">
             <h2>Main Program</h2>
             <img src="${underline}" alt="" />
@@ -88,3 +89,11 @@ export const scdPage = () => {
 `;
   main.appendChild(page2);
 };
+
+// figures page
+page3.classList.add('page3');
+export const thrdPage =()=>{
+  page3.innerHTML=`
+  
+  `
+}

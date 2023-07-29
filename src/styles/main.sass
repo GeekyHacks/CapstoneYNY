@@ -98,7 +98,7 @@ nav
     background-blend-mode: color-burn
     background-repeat: no-repeat
 
-.scdPage
+.Page
     @include columnFlex
     justify-content: center
     align-items: center
@@ -114,9 +114,7 @@ nav
         margin-bottom: .4rem
 
 .programs
-    @include columnFlex
-    justify-content: center
-    align-items: center
+    @include oneFiveGrid
     gap: .5rem
     li
         box-shadow: $box-shadow
@@ -127,7 +125,8 @@ nav
         justify-content: center
         align-items: center
         gap: .25rem
-        max-width: 550px
+        max-width: 450px
+
         img
             flex: .4
         h3
@@ -246,10 +245,10 @@ nav
 
     // page2
     .programs
-        @include rowFlex
+        @include fiveOneGrid
         li
             @include columnFlex
-            height: 12rem
+            // height: 12rem
             gap: .5rem
             p
                 text-align: center
