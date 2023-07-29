@@ -26,6 +26,7 @@
 
 const main = document.querySelector('main');
 const page1 = document.createElement('section');
+const page2 = document.createElement('section');
 page1.classList.add('page1');
 
 export const fstPage = () => {
@@ -44,4 +45,11 @@ export const fstPage = () => {
     </div>
     `;
   main.appendChild(page1);
+};
+
+page2.classList.add('page2');
+export const scdPage = () => {
+page2.innerHTML=`
+
+`
 };

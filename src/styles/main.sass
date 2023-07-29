@@ -5,7 +5,7 @@ body
     background-color: transparent
     font-family: 'Roboto', sans-serif
     font-size: 14px
-    overflow: hidden
+    // overflow: hidden
     margin: 0
     background: $primary-color
 
@@ -61,17 +61,84 @@ nav
 #labels
     display: none
 
-// nav section desktop section
-@media ( min-width: 768px  )
+// Main section 
 
+.page1
+    @include columnFlex
+    // @include transparentBg
+    margin: 3rem 0.15rem 2rem 0.15rem
+
+    background: transparent
+    padding: .5rem
+.hero
+    @include columnFlex
+    justify-content: left
+    align-items: flex-start
+
+    h1
+        @include transparentText
+        font-weight: 800
+        font-size: 1.5rem
+        margin-bottom: 1.5rem
+    .fstPageP
+        box-shadow: $box-shadow
+        border: 3px solid $secondary-color
+        padding: .3rem
+        font-size: .9rem
+        color: $secondary-color
+        text-shadow: 0.4px 0 black
+        // background: linear-gradient( to top , rgba(0, 0, 0, .3),rgba(0, 0, 0, 0.6))
+
+    h2
+        margin-top: 1rem
+        font-size: 1.1rem
+
+// font adjustment 
+
+@media (min-width: 375px) and ( max-width: 500px  )
+    .hero
+        h1
+            font-size: 1.922rem
+        .fstPageP
+            font-size: 1.1rem
+        h2
+            font-size: 1.2rem
+        .adress
+            font-size: .9rem
+
+@media (min-width: 500px) and ( max-width: 650px  )
+    .hero
+        h1
+            font-size: 2.55rem
+        .fstPageP
+            font-size: 1.4rem
+        h2
+            font-size: 1.5rem
+        .adress
+            font-size: 1.2rem
+
+@media (min-width: 650px) and ( max-width: 768px  )
+    .hero
+        h1
+            font-size: 3.1rem
+        .fstPageP
+            font-size: 1.5rem
+        h2
+            font-size: 1.6rem
+        .adress
+            font-size: 1.3rem
+
+// desktop 
+
+@media ( min-width: 768px  )
     nav
         gap: 0
+
     .fstHead
         @include rowFlex
         justify-content: end
         background: #434c5e
 
-    // padding elements 
     #fstHead, #sndHead
         padding-right: $qrpadding
 
@@ -105,44 +172,14 @@ nav
         justify-content: space-evenly
         align-items: center
         font-size: .8rem
+
         #borderLabel
             color: $secondary-color
             border: 3px solid $secondary-color
             white-space: nowrap
             padding: 0.3rem
+    // main section
 
-// Main section mobile
-
-.page1
-    @include columnFlex
-    // @include transparentBg
-    margin: 3rem 0.15rem 1.5rem 0.15rem
-    
-    background: transparent
-    padding: .5rem
-.hero
-    @include columnFlex
-    justify-content: left
-    align-items: flex-start
-
-    h1
-        @include transparentText
-        font-weight: 800
-        font-size: 1.5rem
-        margin-bottom: 1.2rem
-    .fstPageP
-        box-shadow: $box-shadow
-        border: 3px solid $secondary-color
-        padding: .3rem
-        color: $secondary-color
-        text-shadow: 0.4px 0 black
-        // background: linear-gradient( to top , rgba(0, 0, 0, .3),rgba(0, 0, 0, 0.6))
-
-    h2
-        margin-top: 1rem
-
-// main section desktop section
-@media ( min-width: 768px  )
     .page1
         margin-top: 4rem
         padding-right: $Qrpadding
@@ -155,20 +192,21 @@ nav
         h2
             font-size: 2.2rem
         .adress
-            font-size:1.5rem
+            font-size: 1.5rem
 
-.btn
-    background-color: $primary-color
-    color: $secondary-color
-    border: 0
-    border-radius: 10px
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
-    padding: 14px 40px
-    font-size: 16px
-    cursor: pointer
+    
+// .btn
+//     background-color: $primary-color
+//     color: $secondary-color
+//     border: 0
+//     border-radius: 10px
+//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
+//     padding: 14px 40px
+//     font-size: 16px
+//     cursor: pointer
 
-    &:active
-        transform: scale(0.98)
+//     &:active
+//         transform: scale(0.98)
 
-    &:focus
-        outline: 0
+//     &:focus
+//         outline: 0
