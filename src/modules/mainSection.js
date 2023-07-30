@@ -4,13 +4,7 @@ import program2 from '../assets/program_icon_02.svg';
 import program3 from '../assets/program_icon_03.svg';
 import program4 from '../assets/program_icon_04.svg';
 import program5 from '../assets/program_icon_05.svg';
-// figures
-// import Ghafiqi from '../Abdul_Rahman_Al_Ghafiqi.png';
-// import Sheba from '../Queen_of_Sheba.jpg';
-// import SalimRubai from '../SalimRubai.jpg';
-// import Eryani from '../Abdrahman_al-Eryani.jpg';
-// import Imam from '../Imam_qasam.png';
-// import Hamdi from '../IbrahimAl_Hamdi.jpg';
+
 // partners images
 // import ssss from '../1328850086.svg';
 // import BRICS from '../BRICS.svg';
@@ -19,15 +13,14 @@ import program5 from '../assets/program_icon_05.svg';
 // import YemenFlag from '../Yemen-Map-Flag-With-Stroke-And-Emblem.svg';
 
 // other icons
-// import arrowDown from '../arrow_down.svg';
 import underline from '../assets/title_underline.svg';
 // import X from '../x.svg';
 // import logo from '../logo.svg';
 
-const main = document.querySelector('main');
+export const main = document.querySelector('main');
 const page1 = document.createElement('section');
 const page2 = document.createElement('section');
-const page3 = document.createElement('section');
+
 page1.classList.add('page1');
 
 export const fstPage = () => {
@@ -56,7 +49,7 @@ export const scdPage = () => {
             <h2>Main Program</h2>
             <img src="${underline}" alt="" />
           </div>
-          <ul class="programs">
+          <ul class="UL">
             <li>
               <img src="${program1}" alt="" />
               <h3>Lecture</h3>
@@ -90,10 +83,4 @@ export const scdPage = () => {
   main.appendChild(page2);
 };
 
-// figures page
-page3.classList.add('page3');
-export const thrdPage =()=>{
-  page3.innerHTML=`
-  
-  `
-}
+
