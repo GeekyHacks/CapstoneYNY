@@ -49,10 +49,10 @@ export const thrdPage = () => {
   page3.innerHTML = `
   <div class="Page">
   <div class="fstPart">
-    <h2>National Figures</h2>
+    <h2 class="figuresH2">National Figures</h2>
     <img src="${underline}" alt="" />
   </div>
-  <ul class="UL">
+  <ul class="C2UL">
     <li>
       <div class="imgPart">
         <img src="${Ghafiqi}" alt="Program icon" />
@@ -64,9 +64,7 @@ export const thrdPage = () => {
       </div>
     </li>
     <li>
-      <div class="imgPart">
-        <img src="${Sheba}" alt="Program icon" />
-      </div>
+      <img src="${Sheba}" alt="Program icon" />
       <div class="contentPart">
         <h2>The Queen of Sheba</h2>
         <h3>The Queen of Sheba Kingdom</h3>

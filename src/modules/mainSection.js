@@ -49,7 +49,7 @@ export const scdPage = () => {
             <h2>Main Program</h2>
             <img src="${underline}" alt="" />
           </div>
-          <ul class="UL">
+          <ul class="C1UL">
             <li>
               <img src="${program1}" alt="" />
               <h3>Lecture</h3>
