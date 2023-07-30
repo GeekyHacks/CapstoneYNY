@@ -12,7 +12,7 @@ import underline from '../assets/title_underline.svg';
 import arrowDown from '../assets/arrow_down.svg';
 
 const page3 = document.createElement('section');
-
+// const newFigure = document.createElement('li');
 // list of the other figures
 const figuresArray = [
   {
@@ -78,3 +78,46 @@ export const thrdPage = () => {
   `;
   main.appendChild(page3);
 };
+
+export const figuresList = (li) => {
+  li = document.createElement('li');
+  for (let i = 0; i < figuresArray.length; i += 1) {
+    li.innerHTML += `
+              <img src="${figuresArray[i].img}" alt="Program icon" />
+              <div class="contentPart">
+                <h2>${figuresArray[i].name}</h2>
+                <h3>${figuresArray[i].occupation}</h3>
+                <p>${figuresArray[i].description}</p>
+              </div>
+      `;
+   
+  }
+  main.appendChild(li);
+};
+
+// window.onload = () => {
+  if (window.innerWidth >= 768) {
+    let newFigure;
+    figuresList(newFigure);
+    main.appendChild(newFigure);
+
+    // for (let i = 0; i < figuresArray.length; i += 1) {
+    //   newFigure = document.createElement('li');
+    //   newFigure.innerHTML = `
+    //             <div class="imgPart">
+    //               <img src="${figuresArray[i].img}" alt="Program icon" />
+    //             </div>
+    //             <div class="contentPart">
+    //               <h2>${figuresArray[i].name}</h2>
+    //               <h3>${figuresArray[i].occupation}</h3>
+    //               <p>${figuresArray[i].description}</p>
+    //             </div>
+    //     `;
+
+    //   listofFigures.appendChild(newFigure);
+    // }
+  } else if (window.innerWidth < 768) {
+    // listofFigures.removeChild(newFigure);
+    viewMore.style.display = 'block';
+  }
+// };

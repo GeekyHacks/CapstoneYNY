@@ -40,12 +40,12 @@ $Qlpadding: calc( 25% - 120px )
 
 @mixin oneRowGrid
     display: grid
-    grid-template-rows: 1fr
-    grid-auto-columns: 1fr
+    grid-auto-rows: 1fr
+    grid-template-columns: repeat(5, 1fr)
 @mixin oneColumnGrid
     display: grid
     grid-template-columns: 1fr
-    grid-auto-rows: 1fr
+    grid-auto-columns: 1fr
 @mixin fiveOneGrid
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
