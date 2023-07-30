@@ -1,5 +1,4 @@
 import { main } from './mainSection.js';
-
 // figures
 import Ghafiqi from '../assets/Abdul_Rahman_Al_Ghafiqi.png';
 import Sheba from '../assets/Queen_of_Sheba.jpg';
@@ -12,6 +11,7 @@ import underline from '../assets/title_underline.svg';
 import arrowDown from '../assets/arrow_down.svg';
 
 const page3 = document.createElement('section');
+
 // const newFigure = document.createElement('li');
 // list of the other figures
 const figuresArray = [
@@ -54,9 +54,7 @@ export const thrdPage = () => {
   </div>
   <ul class="C2UL">
     <li>
-      <div class="imgPart">
-        <img src="${Ghafiqi}" alt="Program icon" />
-      </div>
+      <img src="${Ghafiqi}" alt="Program icon" />
       <div class="contentPart">
         <h2>Abd al-Rahman ibn Abd Allah Al-Ghafiqi</h2>
         <h3>commander of the Andalusian Muslims</h3>
@@ -79,45 +77,46 @@ export const thrdPage = () => {
   main.appendChild(page3);
 };
 
-export const figuresList = (li) => {
-  li = document.createElement('li');
-  for (let i = 0; i < figuresArray.length; i += 1) {
+export const figuresList = () => {
+  const UL = document.querySelector('.C2UL');
+  figuresArray.forEach((li) => {
+    li = document.createElement('li');
     li.innerHTML += `
-              <img src="${figuresArray[i].img}" alt="Program icon" />
+              <img src="${li.img}" alt="Program icon" />
               <div class="contentPart">
-                <h2>${figuresArray[i].name}</h2>
-                <h3>${figuresArray[i].occupation}</h3>
-                <p>${figuresArray[i].description}</p>
+                <h2>${li.name}</h2>
+                <h3>${li.occupation}</h3>
+                <p>${li.description}</p>
               </div>
       `;
-   
-  }
-  main.appendChild(li);
+    
+  });
+  UL.appendChild(li);
 };
+// figuresList();
+// window.addEventListener('load', () => {
+if (window.innerWidth >= 768) {
+  // let newFigure;
+  figuresList();
+  // UL.appendChild();
 
-// window.onload = () => {
-  if (window.innerWidth >= 768) {
-    let newFigure;
-    figuresList(newFigure);
-    main.appendChild(newFigure);
+  // for (let i = 0; i < figuresArray.length; i += 1) {
+  //   newFigure = document.createElement('li');
+  //   newFigure.innerHTML = `
+  //             <div class="imgPart">
+  //               <img src="${figuresArray[i].img}" alt="Program icon" />
+  //             </div>
+  //             <div class="contentPart">
+  //               <h2>${figuresArray[i].name}</h2>
+  //               <h3>${figuresArray[i].occupation}</h3>
+  //               <p>${figuresArray[i].description}</p>
+  //             </div>
+  //     `;
 
-    // for (let i = 0; i < figuresArray.length; i += 1) {
-    //   newFigure = document.createElement('li');
-    //   newFigure.innerHTML = `
-    //             <div class="imgPart">
-    //               <img src="${figuresArray[i].img}" alt="Program icon" />
-    //             </div>
-    //             <div class="contentPart">
-    //               <h2>${figuresArray[i].name}</h2>
-    //               <h3>${figuresArray[i].occupation}</h3>
-    //               <p>${figuresArray[i].description}</p>
-    //             </div>
-    //     `;
-
-    //   listofFigures.appendChild(newFigure);
-    // }
-  } else if (window.innerWidth < 768) {
-    // listofFigures.removeChild(newFigure);
-    viewMore.style.display = 'block';
-  }
-// };
+  //   listofFigures.appendChild(newFigure);
+  // }
+} else if (window.innerWidth < 768) {
+  // listofFigures.removeChild(newFigure);
+  viewMore.style.display = 'block';
+}
+// });
