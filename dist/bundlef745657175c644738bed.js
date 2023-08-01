@@ -10,6 +10,7 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   figuresList: () => (/* binding */ figuresList),
 /* harmony export */   thrdPage: () => (/* binding */ thrdPage)
 /* harmony export */ });
 /* harmony import */ var _mainSection_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainSection.js */ "./src/modules/mainSection.js");
@@ -22,7 +23,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/title_underline.svg */ "./src/assets/title_underline.svg");
 /* harmony import */ var _assets_arrow_down_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/arrow_down.svg */ "./src/assets/arrow_down.svg");
 
-
 // figures
 
 
@@ -34,6 +34,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var page3 = document.createElement('section');
 
+// const newFigure = document.createElement('li');
 // list of the other figures
 var figuresArray = [{
   img: _assets_IbrahimAl_Hamdi_jpg__WEBPACK_IMPORTED_MODULE_6__,
@@ -58,9 +59,44 @@ var figuresArray = [{
 }];
 page3.classList.add('page3');
 var thrdPage = function thrdPage() {
-  page3.innerHTML = "\n  <div class=\"Page\">\n  <div class=\"fstPart\">\n    <h2>National Figures</h2>\n    <img src=\"".concat(_assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_7__, "\" alt=\"\" />\n  </div>\n  <ul class=\"UL\">\n    <li>\n      <div class=\"imgPart\">\n        <img src=\"").concat(_assets_Abdul_Rahman_Al_Ghafiqi_png__WEBPACK_IMPORTED_MODULE_1__, "\" alt=\"Program icon\" />\n      </div>\n      <div class=\"contentPart\">\n        <h2>Abd al-Rahman ibn Abd Allah Al-Ghafiqi</h2>\n        <h3>commander of the Andalusian Muslims</h3>\n        <p>The governor of Andalusia (Spain nowadays) for two times.</p>\n      </div>\n    </li>\n    <li>\n      <div class=\"imgPart\">\n        <img src=\"").concat(_assets_Queen_of_Sheba_jpg__WEBPACK_IMPORTED_MODULE_2__, "\" alt=\"Program icon\" />\n      </div>\n      <div class=\"contentPart\">\n        <h2>The Queen of Sheba</h2>\n        <h3>The Queen of Sheba Kingdom</h3>\n        <p>She was one of few great leaders that was wise and kind</p>\n      </div>\n    </li>\n  </ul>\n  <button class=\"viewMore\">View More <img src=\"").concat(_assets_arrow_down_svg__WEBPACK_IMPORTED_MODULE_8__, "\" alt=\"More\" /></button>\n</div>\n  \n  ");
+  page3.innerHTML = "\n  <div class=\"Page\">\n  <div class=\"fstPart\">\n    <h2 class=\"figuresH2\">National Figures</h2>\n    <img src=\"".concat(_assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_7__, "\" alt=\"\" />\n  </div>\n  <ul class=\"C2UL\">\n    <li>\n      <img src=\"").concat(_assets_Abdul_Rahman_Al_Ghafiqi_png__WEBPACK_IMPORTED_MODULE_1__, "\" alt=\"Program icon\" />\n      <div class=\"contentPart\">\n        <h2>Abd al-Rahman ibn Abd Allah Al-Ghafiqi</h2>\n        <h3>commander of the Andalusian Muslims</h3>\n        <p>The governor of Andalusia (Spain nowadays) for two times.</p>\n      </div>\n    </li>\n    <li>\n      <img src=\"").concat(_assets_Queen_of_Sheba_jpg__WEBPACK_IMPORTED_MODULE_2__, "\" alt=\"Program icon\" />\n      <div class=\"contentPart\">\n        <h2>The Queen of Sheba</h2>\n        <h3>The Queen of Sheba Kingdom</h3>\n        <p>She was one of few great leaders that was wise and kind</p>\n      </div>\n    </li>\n  </ul>\n  <button class=\"viewMore\">View More <img src=\"").concat(_assets_arrow_down_svg__WEBPACK_IMPORTED_MODULE_8__, "\" alt=\"More\" /></button>\n</div>\n  \n  ");
   _mainSection_js__WEBPACK_IMPORTED_MODULE_0__.main.appendChild(page3);
 };
+var figuresList = function figuresList() {
+  var UL = document.querySelector('.C2UL');
+  figuresArray.forEach(function (li) {
+    li = document.createElement('li');
+    li.innerHTML += "\n              <img src=\"".concat(li.img, "\" alt=\"Program icon\" />\n              <div class=\"contentPart\">\n                <h2>").concat(li.name, "</h2>\n                <h3>").concat(li.occupation, "</h3>\n                <p>").concat(li.description, "</p>\n              </div>\n      ");
+  });
+  UL.appendChild(li);
+};
+// figuresList();
+// window.addEventListener('load', () => {
+if (window.innerWidth >= 768) {
+  // let newFigure;
+  figuresList();
+  // UL.appendChild();
+
+  // for (let i = 0; i < figuresArray.length; i += 1) {
+  //   newFigure = document.createElement('li');
+  //   newFigure.innerHTML = `
+  //             <div class="imgPart">
+  //               <img src="${figuresArray[i].img}" alt="Program icon" />
+  //             </div>
+  //             <div class="contentPart">
+  //               <h2>${figuresArray[i].name}</h2>
+  //               <h3>${figuresArray[i].occupation}</h3>
+  //               <p>${figuresArray[i].description}</p>
+  //             </div>
+  //     `;
+
+  //   listofFigures.appendChild(newFigure);
+  // }
+} else if (window.innerWidth < 768) {
+  // listofFigures.removeChild(newFigure);
+  viewMore.style.display = 'block';
+}
+// });
 
 /***/ }),
 
@@ -138,7 +174,7 @@ var fstPage = function fstPage() {
 };
 page2.classList.add('page2');
 var scdPage = function scdPage() {
-  page2.innerHTML = "\n<div class=\"Page\">\n          <div class=\"fstPart\">\n            <h2>Main Program</h2>\n            <img src=\"".concat(_assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_5__, "\" alt=\"\" />\n          </div>\n          <ul class=\"UL\">\n            <li>\n              <img src=\"").concat(_assets_program_icon_01_svg__WEBPACK_IMPORTED_MODULE_0__, "\" alt=\"\" />\n              <h3>Lecture</h3>\n              <p>Listen about Yemeni figures and get inspired to the change for better future.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_02_svg__WEBPACK_IMPORTED_MODULE_1__, "\" alt=\"\" />\n              <h3>Exhibitions</h3>\n              <p>Appreciate various creations applying YNY ID and be part of patriotic community</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_03_svg__WEBPACK_IMPORTED_MODULE_2__, "\" alt=\"\" />\n              <h3>Forum</h3>\n              <p>Have the time to share your thoughts and opinions with experts for each topic.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_04_svg__WEBPACK_IMPORTED_MODULE_3__, "\" alt=\"\" />\n              <h3>Workshop</h3>\n              <p>Try creating your own work using open source license rather than just watching at it.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_05_svg__WEBPACK_IMPORTED_MODULE_4__, "\" alt=\"\" />\n              <h3>Ignite</h3>\n              <p>get opportunities to network with CC affiliates around the world, also after the summit.</p>\n            </li>\n          </ul>\n\n          <h3 class=\"endPart\">Join YNY National Summit 2024</h3>\n        </div>\n");
+  page2.innerHTML = "\n<div class=\"Page\">\n          <div class=\"fstPart\">\n            <h2>Main Program</h2>\n            <img src=\"".concat(_assets_title_underline_svg__WEBPACK_IMPORTED_MODULE_5__, "\" alt=\"\" />\n          </div>\n          <ul class=\"C1UL\">\n            <li>\n              <img src=\"").concat(_assets_program_icon_01_svg__WEBPACK_IMPORTED_MODULE_0__, "\" alt=\"\" />\n              <h3>Lecture</h3>\n              <p>Listen about Yemeni figures and get inspired to the change for better future.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_02_svg__WEBPACK_IMPORTED_MODULE_1__, "\" alt=\"\" />\n              <h3>Exhibitions</h3>\n              <p>Appreciate various creations applying YNY ID and be part of patriotic community</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_03_svg__WEBPACK_IMPORTED_MODULE_2__, "\" alt=\"\" />\n              <h3>Forum</h3>\n              <p>Have the time to share your thoughts and opinions with experts for each topic.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_04_svg__WEBPACK_IMPORTED_MODULE_3__, "\" alt=\"\" />\n              <h3>Workshop</h3>\n              <p>Try creating your own work using open source license rather than just watching at it.</p>\n            </li>\n            <li>\n              <img src=\"").concat(_assets_program_icon_05_svg__WEBPACK_IMPORTED_MODULE_4__, "\" alt=\"\" />\n              <h3>Ignite</h3>\n              <p>get opportunities to network with CC affiliates around the world, also after the summit.</p>\n            </li>\n          </ul>\n\n          <h3 class=\"endPart\">Join YNY National Summit 2024</h3>\n        </div>\n");
   main.appendChild(page2);
 };
 
@@ -300,48 +336,66 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 1.5rem;
+  margin: 1rem 1.5rem;
   gap: 2rem;
   color: #a7b7bd;
 }
 
-.fstPart {
+.fstPart, .contentPart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.fstPart h2 {
+.fstPart h2, .contentPart h2 {
   margin-bottom: 0.4rem;
 }
 
-.UL {
+.figuresH2 {
+  color: rgba(87, 85, 85, 0.7);
+}
+
+.C1UL, .C2UL {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
+  grid-auto-columns: 1fr;
+  gap: 0.7rem;
 }
-.UL li {
+.C1UL li, .C2UL li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   background-color: rgba(150, 150, 150, 0.2);
   stroke-opacity: 1;
-  padding: 0.2rem;
+  padding: 0.3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem;
-  max-width: 450px;
+  gap: 0.3rem;
+  max-width: 26rem;
 }
-.UL li img {
+.C1UL li img, .C2UL li img {
   flex: 0.4;
+  max-width: 10rem;
+  max-height: 15rem;
 }
-.UL li h3 {
+.C1UL li h3, .C2UL li h3 {
   flex: 0.4;
+  text-align: center;
 }
-.UL li p {
+.C1UL li p, .C2UL li p {
   flex: 1;
   text-align: left;
+}
+.C1UL li .contentPart, .C2UL li .contentPart {
+  align-self: stretch;
+  align-items: flex-start;
+  flex: 1.2;
+  gap: 0.2rem;
+  margin: 0.5rem 0.2rem;
+  color: rgba(87, 85, 85, 0.7);
+}
+.C1UL li .contentPart h2, .C2UL li .contentPart h2 {
+  color: rgba(87, 85, 85, 0.7) !important;
 }
 
 .endPart {
@@ -350,6 +404,17 @@ nav {
   color: #a7b7bd;
   white-space: nowrap;
   padding: 1rem;
+}
+
+.viewMore {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  align-self: stretch;
+  height: 50px;
+  background-color: rgba(150, 150, 150, 0.2);
+  color: rgba(87, 85, 85, 0.7);
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.1rem;
 }
 
 @media (min-width: 375px) and (max-width: 500px) {
@@ -464,20 +529,28 @@ nav {
   .hero .adress {
     font-size: 1.5rem;
   }
-  .programs {
+  .C1UL {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
-  .programs li {
+  .C1UL li {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  .programs li p {
+  .C1UL li p {
     text-align: center;
   }
-}`, "",{"version":3,"sources":["webpack://./src/styles/global.sass","webpack://./src/styles/main.sass"],"names":[],"mappings":"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","sourcesContent":["$InterFont: \"Inter\", sans-serif\r\n$primary-color: rgba(150, 150, 150, 0.2)\r\n$secondary-color: #a7b7bd\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 20% - 100px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 20% - 100px )\r\n$Qlpadding: calc( 25% - 120px )\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 2px\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1rem\r\n    letter-spacing: 0.001em\r\n    word-spacing: normal\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    box-shadow: $box-shadow\r\n    padding: 10px\r\n    cursor: pointer\r\n    text-align: center\r\n\r\n@mixin oneFiveGrid\r\n    display: grid\r\n    grid-template-columns: 1fr\r\n    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr\r\n@mixin fiveOneGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr\r\n    grid-auto-rows: 1fr\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n","@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n$assetsPath: '../assets'\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 14px\r\n    // overflow: hidden\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n\r\na,img\r\n    color: #fbfaf8\r\n    transition: all 0.5\r\n\r\n    &:hover\r\n        opacity: .7\r\n        cursor: pointer\r\n        transform: scale(1.1)\r\n        color: black !important\r\n\r\n    &:active\r\n        transform: scale(1.3)\r\n        color: $secondary-color\r\n\r\n    &:focus\r\n        outline: 0\r\n        color: $secondary-color\r\n\r\n// nav section mobile section\r\nnav\r\n    @include columnFlex\r\n\r\n.fstHead\r\n    display: none\r\n\r\n#fstHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: 1rem\r\n\r\n#sndHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: .2rem\r\n    box-shadow: $box-shadow\r\n    background: $secondary-color\r\n    height: 3.2rem\r\n\r\n#menuBtn\r\n    flex: .2\r\n\r\n#logo\r\n    flex: 2\r\n    height: 2.8rem\r\n\r\n#labels\r\n    display: none\r\n\r\n// Main section \r\n\r\n.page1\r\n    @include columnFlex\r\n    margin: 3rem 0.15rem 2rem 0.15rem\r\n    padding: .5rem\r\n.hero\r\n    @include columnFlex\r\n    justify-content: left\r\n    align-items: flex-start\r\n\r\n    h1\r\n        @include transparentText\r\n        font-weight: 800\r\n        font-size: 1.5rem\r\n        margin-bottom: 1.5rem\r\n    .fstPageP\r\n        box-shadow: $box-shadow\r\n        border: 3px solid $secondary-color\r\n        padding: .3rem\r\n        font-size: .9rem\r\n        // color: $secondary-color\r\n        text-shadow: 0.4px .2 black\r\n        // background-color: rgba(150, 150, 150, 0.2)\r\n\r\n    h2\r\n        margin-top: 1rem\r\n        font-size: 1.1rem\r\n\r\n.page2\r\n    @include columnFlex\r\n    background-image: url('#{$assetsPath}/program_content.svg')\r\n    background-size: cover\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n\r\n.Page\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    margin: .5rem 1.5rem\r\n    gap: 2rem\r\n    color: $secondary-color\r\n\r\n.fstPart\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    h2\r\n        margin-bottom: .4rem\r\n\r\n.UL\r\n    @include oneFiveGrid\r\n    gap: .5rem\r\n    li\r\n        box-shadow: $box-shadow\r\n        background-color: rgba(150, 150, 150, 0.2)\r\n        stroke-opacity: 1\r\n        padding: .2rem\r\n        @include rowFlex\r\n        justify-content: center\r\n        align-items: center\r\n        gap: .25rem\r\n        max-width: 450px\r\n\r\n        img\r\n            flex: .4\r\n        h3\r\n            flex: .4\r\n        p\r\n            flex: 1\r\n            text-align: left\r\n\r\n.endPart\r\n    box-shadow: $box-shadow\r\n    background-color: rgba(87, 85, 85, 0.7)\r\n    color: $secondary-color\r\n    white-space: nowrap\r\n    padding: 1rem\r\n\r\n// font adjustment \r\n\r\n@media (min-width: 375px) and ( max-width: 500px  )\r\n    .hero\r\n        h1\r\n            font-size: 1.922rem\r\n        .fstPageP\r\n            font-size: 1.1rem\r\n        h2\r\n            font-size: 1.2rem\r\n        .adress\r\n            font-size: .9rem\r\n\r\n@media (min-width: 500px) and ( max-width: 650px  )\r\n    .hero\r\n        h1\r\n            font-size: 2.55rem\r\n        .fstPageP\r\n            font-size: 1.4rem\r\n        h2\r\n            font-size: 1.5rem\r\n        .adress\r\n            font-size: 1.2rem\r\n\r\n@media (min-width: 650px) and ( max-width: 768px  )\r\n    .hero\r\n        h1\r\n            font-size: 3.1rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 1.6rem\r\n        .adress\r\n            font-size: 1.3rem\r\n\r\n// desktop \r\n\r\n@media ( min-width: 768px  )\r\n    nav\r\n        gap: 0\r\n\r\n    .fstHead\r\n        @include rowFlex\r\n        justify-content: end\r\n        background: #434c5e\r\n\r\n    #fstHead, #sndHead\r\n        padding-right: $qrpadding\r\n\r\n    #fstHead\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        padding-right: $Qrpadding\r\n\r\n    #sndHead\r\n        @include rowFlex\r\n        justify-content: space-between\r\n        align-items: center\r\n        box-shadow: $box-shadow\r\n        background: #fbfaf8\r\n        gap: 2rem\r\n\r\n        a\r\n            color: #495057\r\n\r\n    #menuBtn\r\n        display: none\r\n\r\n    #logo\r\n        flex: 2\r\n        height: 3rem\r\n\r\n    #labels\r\n        flex: 6\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        font-size: .8rem\r\n\r\n        #borderLabel\r\n            color: $secondary-color\r\n            border: 3px solid $secondary-color\r\n            white-space: nowrap\r\n            padding: 0.3rem\r\n    // main section\r\n\r\n    .page1\r\n        margin-top: 4rem\r\n        padding-right: $Qrpadding\r\n        padding-left: $Qlpadding\r\n    .hero\r\n        h1\r\n            font-size: 3.3rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 2.2rem\r\n        .adress\r\n            font-size: 1.5rem\r\n\r\n    // page2\r\n    .programs\r\n        @include fiveOneGrid\r\n        li\r\n            @include columnFlex\r\n            // height: 12rem\r\n            gap: .5rem\r\n            p\r\n                text-align: center\r\n\r\n// .btn\r\n//     background-color: $primary-color\r\n//     color: $secondary-color\r\n//     border: 0\r\n//     border-radius: 10px\r\n//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n//     padding: 14px 40px\r\n//     font-size: 16px\r\n//     cursor: pointer\r\n\r\n//     &:active\r\n//         transform: scale(0.98)\r\n\r\n//     &:focus\r\n//         outline: 0\r\n"],"sourceRoot":""}]);
+  .C2UL {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .viewMore {
+    display: none;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/styles/global.sass","webpack://./src/styles/main.sass"],"names":[],"mappings":"AAQA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;EACA,qBAAA;ACNJ;;AALA;EACI,6BAAA;EACA,iCAAA;EACA,eAAA;EAEA,SAAA;EACA,4BAAA;EACA,0CDTY;ACgBhB;;AALA;EACI,cAAA;EACA,mBAAA;AAQJ;AANI;EACI,YAAA;EACA,eAAA;EACA,qBAAA;EACA,uBAAA;AAQR;AANI;EACI,qBAAA;EACA,cDtBU;AC8BlB;AANI;EACI,UAAA;EACA,cD1BU;ACkClB;;AALA;EDZI,aAAA;EACA,sBAAA;ACqBJ;;AAPA;EACI,aAAA;AAUJ;;AARA;EDfI,aAAA;EACA,mBAAA;ECgBA,8BAAA;EACA,mBAAA;EACA,eAAA;EACA,SAAA;AAYJ;;AAVA;EDtBI,aAAA;EACA,mBAAA;ECuBA,8BAAA;EACA,mBAAA;EACA,eAAA;EACA,WAAA;EACA,wED/CS;ECgDT,mBDjDc;ECkDd,cAAA;AAcJ;;AAZA;EACI,SAAA;AAeJ;;AAbA;EACI,OAAA;EACA,cAAA;AAgBJ;;AAdA;EACI,aAAA;AAiBJ;;AAbA;ED/CI,aAAA;EACA,sBAAA;ECgDA,iCAAA;EACA,eAAA;AAiBJ;;AAhBA;EDnDI,aAAA;EACA,sBAAA;ECoDA,qBAAA;EACA,uBAAA;AAoBJ;AAlBI;EDUA,yDAAA;EACA,0BAAA;EACA,4BAAA;EACA,6BAAA;EACA,oCAAA;ECZI,gBAAA;EACA,iBAAA;EACA,qBAAA;AAwBR;AAvBI;EACI,wED9EK;EC+EL,yBAAA;EACA,eAAA;EACA,iBAAA;EAEA,4BAAA;AAwBR;AArBI;EACI,gBAAA;EACA,iBAAA;AAuBR;;AArBA;ED1EI,aAAA;EACA,sBAAA;EC2EA,yDAAA;EACA,sBAAA;EACA,iCAAA;EACA,4BAAA;AAyBJ;;AAvBA;EDjFI,aAAA;EACA,sBAAA;ECkFA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,SAAA;EACA,cDxGc;ACmIlB;;AAzBA;EDzFI,aAAA;EACA,sBAAA;EC0FA,uBAAA;EACA,mBAAA;AA6BJ;AA5BI;EACI,qBAAA;AA8BR;;AA5BA;EACI,4BAAA;AA+BJ;;AA9BA;EDxEI,aAAA;EACA,0BAAA;EACA,sBAAA;ECwEA,WAAA;AAmCJ;AAlCI;EACI,wEDtHK;ECuHL,0CAAA;EACA,iBAAA;EACA,eAAA;EDtGJ,aAAA;EACA,mBAAA;ECuGI,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;AAqCR;AApCQ;EACI,SAAA;EACA,gBAAA;EACA,iBAAA;AAsCZ;AArCQ;EACI,SAAA;EACA,kBAAA;AAuCZ;AAtCQ;EACI,OAAA;EACA,gBAAA;AAwCZ;AAvCQ;EACI,mBAAA;EACA,uBAAA;EACA,SAAA;EACA,WAAA;EACA,qBAAA;EACA,4BAAA;AAyCZ;AAxCY;EACI,uCAAA;AA0ChB;;AAxCA;EACI,wEDpJS;ECqJT,uCAAA;EACA,cDvJc;ECwJd,mBAAA;EACA,aAAA;AA2CJ;;AAzCA;EACI,wED3JS;EC4JT,mBAAA;EACA,YAAA;EACA,0CDhKY;ECiKZ,4BAAA;EACA,gBAAA;EACA,SAAA;EACA,qBAAA;AA4CJ;;AAxCA;EAEQ;IACI,mBAAA;EA0CV;EAzCM;IACI,iBAAA;EA2CV;EA1CM;IACI,iBAAA;EA4CV;EA3CM;IACI,iBAAA;EA6CV;AACF;AA5CA;EAEQ;IACI,kBAAA;EA6CV;EA5CM;IACI,iBAAA;EA8CV;EA7CM;IACI,iBAAA;EA+CV;EA9CM;IACI,iBAAA;EAgDV;AACF;AA/CA;EAEQ;IACI,iBAAA;EAgDV;EA/CM;IACI,iBAAA;EAiDV;EAhDM;IACI,iBAAA;EAkDV;EAjDM;IACI,iBAAA;EAmDV;AACF;AAhDA;EACI;IACI,MAAA;EAkDN;EAhDE;ID1LA,aAAA;IACA,mBAAA;IC2LI,oBAAA;IACA,mBAAA;EAmDN;EAjDE;IACI,gCDlNI;ECqQV;EAjDE;IDlMA,aAAA;IACA,mBAAA;ICmMI,6BAAA;IACA,mBAAA;IACA,gCDvNI;EC2QV;EAlDE;IDxMA,aAAA;IACA,mBAAA;ICyMI,8BAAA;IACA,mBAAA;IACA,wED/NK;ICgOL,mBAAA;IACA,SAAA;EAqDN;EAnDM;IACI,cAAA;EAqDV;EAnDE;IACI,aAAA;EAqDN;EAnDE;IACI,OAAA;IACA,YAAA;EAqDN;EAnDE;IACI,OAAA;ID3NJ,aAAA;IACA,mBAAA;IC4NI,6BAAA;IACA,mBAAA;IACA,iBAAA;EAsDN;EApDM;IACI,cDtPM;ICuPN,yBAAA;IACA,mBAAA;IACA,eAAA;EAsDV;EAnDE;IACI,gBAAA;IACA,gCD3PI;IC4PJ,+BD1PI;EC+SV;EAnDM;IACI,iBAAA;EAqDV;EApDM;IACI,iBAAA;EAsDV;EArDM;IACI,iBAAA;EAuDV;EAtDM;IACI,iBAAA;EAwDV;EArDE;IDpOA,aAAA;IACA,mBAAA;IACA,qCAAA;EC4RF;EAxDM;ID5PJ,aAAA;IACA,sBAAA;IC8PQ,WAAA;EA0DV;EAzDU;IACI,kBAAA;EA2Dd;EA1DE;IDhOA,aAAA;IACA,8BAAA;IACA,+BAAA;EC6RF;EA7DE;IACI,aAAA;EA+DN;AACF","sourcesContent":["$InterFont: \"Inter\", sans-serif\r\n$primary-color: rgba(150, 150, 150, 0.2)\r\n$secondary-color: #a7b7bd\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 20% - 100px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 20% - 100px )\r\n$Qlpadding: calc( 25% - 120px )\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 2px\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1rem\r\n    letter-spacing: 0.001em\r\n    word-spacing: normal\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    box-shadow: $box-shadow\r\n    padding: 10px\r\n    cursor: pointer\r\n    text-align: center\r\n\r\n@mixin oneRowGrid\r\n    display: grid\r\n    grid-auto-rows: 1fr\r\n    grid-template-columns: repeat(5, 1fr)\r\n@mixin oneColumnGrid\r\n    display: grid\r\n    grid-template-columns: 1fr\r\n    grid-auto-columns: 1fr\r\n@mixin fiveOneGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr\r\n    grid-auto-rows: 1fr\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n","@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n$assetsPath: '../assets'\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 14px\r\n    // overflow: hidden\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n\r\na,img\r\n    color: #fbfaf8\r\n    transition: all 0.5\r\n\r\n    &:hover\r\n        opacity: .7\r\n        cursor: pointer\r\n        transform: scale(1.1)\r\n        color: black !important\r\n\r\n    &:active\r\n        transform: scale(1.3)\r\n        color: $secondary-color\r\n\r\n    &:focus\r\n        outline: 0\r\n        color: $secondary-color\r\n\r\n// nav section mobile section\r\nnav\r\n    @include columnFlex\r\n\r\n.fstHead\r\n    display: none\r\n\r\n#fstHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: 1rem\r\n\r\n#sndHead\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    padding: .3rem\r\n    gap: .2rem\r\n    box-shadow: $box-shadow\r\n    background: $secondary-color\r\n    height: 3.2rem\r\n\r\n#menuBtn\r\n    flex: .2\r\n\r\n#logo\r\n    flex: 2\r\n    height: 2.8rem\r\n\r\n#labels\r\n    display: none\r\n\r\n// Main section \r\n\r\n.page1\r\n    @include columnFlex\r\n    margin: 3rem 0.15rem 2rem 0.15rem\r\n    padding: .5rem\r\n.hero\r\n    @include columnFlex\r\n    justify-content: left\r\n    align-items: flex-start\r\n\r\n    h1\r\n        @include transparentText\r\n        font-weight: 800\r\n        font-size: 1.5rem\r\n        margin-bottom: 1.5rem\r\n    .fstPageP\r\n        box-shadow: $box-shadow\r\n        border: 3px solid $secondary-color\r\n        padding: .3rem\r\n        font-size: .9rem\r\n        // color: $secondary-color\r\n        text-shadow: 0.4px .2 black\r\n        // background-color: rgba(150, 150, 150, 0.2)\r\n\r\n    h2\r\n        margin-top: 1rem\r\n        font-size: 1.1rem\r\n\r\n.page2\r\n    @include columnFlex\r\n    background-image: url('#{$assetsPath}/program_content.svg')\r\n    background-size: cover\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n\r\n.Page\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    margin: 1rem 1.5rem\r\n    gap: 2rem\r\n    color: $secondary-color\r\n\r\n.fstPart, .contentPart\r\n    @include columnFlex\r\n    justify-content: center\r\n    align-items: center\r\n    h2\r\n        margin-bottom: .4rem\r\n\r\n.figuresH2\r\n    color: rgba(87, 85, 85, 0.7)\r\n.C1UL,.C2UL\r\n    @include oneColumnGrid\r\n    gap: .7rem\r\n    li\r\n        box-shadow: $box-shadow\r\n        background-color: rgba(150, 150, 150, 0.2)\r\n        stroke-opacity: 1\r\n        padding: .3rem\r\n        @include rowFlex\r\n        justify-content: center\r\n        align-items: center\r\n        gap: .3rem\r\n        max-width: 26rem\r\n        img\r\n            flex: .4\r\n            max-width: 10rem\r\n            max-height: 15rem\r\n        h3\r\n            flex: .4\r\n            text-align: center\r\n        p\r\n            flex: 1\r\n            text-align: left\r\n        .contentPart\r\n            align-self: stretch\r\n            align-items: flex-start\r\n            flex: 1.2\r\n            gap: 0.2rem\r\n            margin: 0.5rem 0.2rem\r\n            color: rgba(87, 85, 85, 0.7)\r\n            h2\r\n                color: rgba(87, 85, 85, 0.7) !important\r\n\r\n.endPart\r\n    box-shadow: $box-shadow\r\n    background-color: rgba(87, 85, 85, 0.7)\r\n    color: $secondary-color\r\n    white-space: nowrap\r\n    padding: 1rem\r\n\r\n.viewMore\r\n    box-shadow: $box-shadow\r\n    align-self: stretch\r\n    height: 50px\r\n    background-color: $primary-color\r\n    color: rgba(87, 85, 85, 0.7)\r\n    font-weight: 600\r\n    border: 0\r\n    border-radius: 0.1rem\r\n\r\n// font adjustment \r\n\r\n@media (min-width: 375px) and ( max-width: 500px  )\r\n    .hero\r\n        h1\r\n            font-size: 1.922rem\r\n        .fstPageP\r\n            font-size: 1.1rem\r\n        h2\r\n            font-size: 1.2rem\r\n        .adress\r\n            font-size: .9rem\r\n\r\n@media (min-width: 500px) and ( max-width: 650px  )\r\n    .hero\r\n        h1\r\n            font-size: 2.55rem\r\n        .fstPageP\r\n            font-size: 1.4rem\r\n        h2\r\n            font-size: 1.5rem\r\n        .adress\r\n            font-size: 1.2rem\r\n\r\n@media (min-width: 650px) and ( max-width: 768px  )\r\n    .hero\r\n        h1\r\n            font-size: 3.1rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 1.6rem\r\n        .adress\r\n            font-size: 1.3rem\r\n\r\n// desktop \r\n\r\n@media ( min-width: 768px  )\r\n    nav\r\n        gap: 0\r\n\r\n    .fstHead\r\n        @include rowFlex\r\n        justify-content: end\r\n        background: #434c5e\r\n\r\n    #fstHead, #sndHead\r\n        padding-right: $qrpadding\r\n\r\n    #fstHead\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        padding-right: $Qrpadding\r\n\r\n    #sndHead\r\n        @include rowFlex\r\n        justify-content: space-between\r\n        align-items: center\r\n        box-shadow: $box-shadow\r\n        background: #fbfaf8\r\n        gap: 2rem\r\n\r\n        a\r\n            color: #495057\r\n\r\n    #menuBtn\r\n        display: none\r\n\r\n    #logo\r\n        flex: 2\r\n        height: 3rem\r\n\r\n    #labels\r\n        flex: 6\r\n        @include rowFlex\r\n        justify-content: space-evenly\r\n        align-items: center\r\n        font-size: .8rem\r\n\r\n        #borderLabel\r\n            color: $secondary-color\r\n            border: 3px solid $secondary-color\r\n            white-space: nowrap\r\n            padding: 0.3rem\r\n    // main section\r\n\r\n    .page1\r\n        margin-top: 4rem\r\n        padding-right: $Qrpadding\r\n        padding-left: $Qlpadding\r\n    .hero\r\n        h1\r\n            font-size: 3.3rem\r\n        .fstPageP\r\n            font-size: 1.5rem\r\n        h2\r\n            font-size: 2.2rem\r\n        .adress\r\n            font-size: 1.5rem\r\n\r\n    // page2\r\n    .C1UL\r\n        @include oneRowGrid\r\n        li\r\n            @include columnFlex\r\n            // height: 12rem\r\n            gap: .5rem\r\n            p\r\n                text-align: center\r\n    .C2UL\r\n        @include twoThreeGrid\r\n    .viewMore\r\n        display: none\r\n\r\n// .btn\r\n//     background-color: $primary-color\r\n//     color: $secondary-color\r\n//     border: 0\r\n//     border-radius: 10px\r\n//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n//     padding: 14px 40px\r\n//     font-size: 16px\r\n//     cursor: pointer\r\n\r\n//     &:active\r\n//         transform: scale(0.98)\r\n\r\n//     &:focus\r\n//         outline: 0\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1311,4 +1384,4 @@ window.onload = function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea6461cb2cec50b208646.js.map
+//# sourceMappingURL=bundlef745657175c644738bed.js.map
