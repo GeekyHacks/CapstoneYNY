@@ -1,12 +1,18 @@
 $InterFont: "Inter", sans-serif
-$primary-color: #2fa8cc
-$secondary-color: #acc6e4
-$inputColor:#a8ccf5
+$primary-color: rgba(150, 150, 150, 0.2)
+$secondary-color: #a7b7bd
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
+$qrpadding: calc( 20% - 100px )
+$Qrpadding: calc( 25% - 120px )
+$qlpadding: calc( 20% - 100px )
+$Qlpadding: calc( 25% - 120px )
 *
     box-sizing: border-box
     margin: 0
     padding: 0
+    list-style: none
+    outline: none
+    text-decoration: none
 
 // mixings
 
@@ -32,6 +38,14 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
     cursor: pointer
     text-align: center
 
+@mixin oneFiveGrid
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr
+@mixin fiveOneGrid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-auto-rows: 1fr
 @mixin twoThreeGrid
     display: grid
     grid-template-columns: 1fr 1fr
@@ -64,3 +78,14 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
     font-size: .9rem
     font-family: $InterFont
     letter-spacing: 0.0125rem
+@mixin transparentText
+    background-image: url('#{$assetsPath}/Flag-Yemen.webp')
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+@mixin transparentBg
+    background-image: url('#{$assetsPath}/Flag-Yemen.webp')
+    background-size: 100% 100%
+    background-blend-mode: color-burn
+    background-repeat: no-repeat
